@@ -1,0 +1,16 @@
+# Versions known to work together (Windows 11, Python 3.12).
+# pywhispercpp is installed separately by setup.bat: a Vulkan (GPU) build from this repo's release.
+setuptools==81.0.0         # ctranslate2 still imports pkg_resources, removed in later setuptools
+numpy==2.4.6
+scipy==1.15.1
+onnxruntime==1.22.0        # Silero VAD
+PyAudioWPatch==0.2.12.8    # WASAPI loopback capture of the speakers
+ctranslate2==4.6.0         # OPUS-MT translation, faster-whisper CPU fallback
+sentencepiece==0.2.2       # OPUS-MT tokenizer
+faster-whisper==1.2.1      # CPU fallback, audio file decoding (PyAV)
+av==18.1.0                 # PyAV 19 dropped an argument faster-whisper passes
+huggingface-hub==0.33.0    # model downloads
+pystray==0.19.5            # VoiceType tray icon
+pillow==11.1.0
+customtkinter==6.0.0       # Transcribe window
+tkinterdnd2==0.6.3         # Transcribe drag and drop

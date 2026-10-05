@@ -1,0 +1,15 @@
+# downloaded by setup.bat
+.venv/
+models/
+llama.cpp/
+# written by the apps (private)
+transcripts/
+voicetype.json
+*.log
+# eval clips and results (downloaded / generated)
+eval/clips/
+eval/refs/
+eval/results/
+__pycache__/
+*.part
+*.zip
